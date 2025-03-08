@@ -3,16 +3,17 @@ import { Container, Typography, Box } from "@mui/material";
 
 const SobreNos = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ height: "100vh", overflowY: "auto" }}>
       <Box
         sx={{
           width: "100%",
           my: 4,
-          backgroundImage: "url(assets/image.png)",
+          backgroundImage: "url(/src/assets/image.png)", // Corrigido o caminho da imagem
           backgroundSize: "contain",
           backgroundPosition: "center",
         }}
       >
+        {/* Seção Sobre Nós */}
         <Box
           sx={{
             bgcolor: "rgb(0, 30, 79)",
@@ -26,6 +27,7 @@ const SobreNos = () => {
           </Typography>
         </Box>
 
+        {/* Descrição */}
         <Box sx={{ width: "50%", color: "white", my: 4, ml: "40px" }}>
           <Box sx={{ width: "200%", my: 4 }}>
             <Box sx={{ width: "50%", my: 4 }}>
@@ -54,6 +56,7 @@ const SobreNos = () => {
           </Box>
         </Box>
 
+        {/* Seção História */}
         <Box sx={{ width: "50%", color: "white", my: 4, ml: "40px" }}>
           <Typography variant="h4" component="h1">
             História
@@ -97,6 +100,7 @@ const SobreNos = () => {
           </Box>
         </Box>
 
+        {/* Seção Prêmios */}
         <Box
           position="static"
           sx={{ bgcolor: "rgb(0, 30, 79)", height: "500px" }}
@@ -129,13 +133,13 @@ const SobreNos = () => {
               </Box>
               <Box
                 component="img"
-                src="assets/rectangle23.png"
+                src="/src/assets/rectangle23.png" // Corrigido o caminho da imagem
                 alt="Premio 1"
                 sx={{ width: "12%" }}
               />
               <Box
                 component="img"
-                src="assets/rectangle24.png"
+                src="/src/assets/rectangle24.png" // Corrigido o caminho da imagem
                 alt="Premio 2"
                 sx={{ width: "12%", mr: "80px" }}
               />
@@ -159,6 +163,7 @@ const SobreNos = () => {
           </Box>
         </Box>
 
+        {/* Seção Função Social */}
         <Box position="static" sx={{ bgcolor: "white", height: "400px" }}>
           <Box sx={{ height: "30px" }}></Box>
           <Box
@@ -195,6 +200,7 @@ const SobreNos = () => {
           </Box>
         </Box>
 
+        {/* Seção Membros */}
         <Box
           position="static"
           sx={{ bgcolor: "rgb(0, 30, 79)", height: "600px" }}
@@ -211,7 +217,7 @@ const SobreNos = () => {
           </Box>
           <Box
             component="img"
-            src="assets/mentoria.png"
+            src="/src/assets/mentoria.png" // Corrigido o caminho da imagem
             alt="Descrição da imagem"
             sx={{ width: "100%", display: "flex" }}
           />

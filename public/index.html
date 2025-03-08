@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VagouApp</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="index.js"></script>
-  </body>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Authentication</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="src/firebase-config.ts"></script>  <!-- Importa o código de configuração do Firebase -->
+  <script src="src/App.tsx" defer></script>        <!-- O código JavaScript da sua app -->
+</head>
+<body>
+
+  <h1>Registrar Usuário</h1>
+  <form id="register-form">
+    <input type="email" id="register-email" placeholder="Email" required>
+    <input type="password" id="register-password" placeholder="Senha" required>
+    <button type="submit">Registrar</button>
+  </form>
+
+  <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="login-email" placeholder="Email" required>
+    <input type="password" id="login-password" placeholder="Senha" required>
+    <button type="submit">Login</button>
+  </form>
+
+</body>
 </html>
